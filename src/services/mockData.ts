@@ -49,7 +49,7 @@ export const mockFontes: Fonte[] = [
     instituicao: 'IBGE',
     titulo: 'Censo Demográfico 2022 - Agregados por Setores e Bairros',
     url: 'https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/',
-    data_acesso: '2024-10-15',
+    data_acesso: 'Nov/2026',
     descricao: 'Dados oficiais sobre população, domicílios, renda, saneamento básico e características urbanísticas do entorno.'
   },
   {
@@ -57,7 +57,7 @@ export const mockFontes: Fonte[] = [
     instituicao: 'IPEA',
     titulo: 'Atlas da Vulnerabilidade Social (IVS)',
     url: 'http://ivs.ipea.gov.br/',
-    data_acesso: '2024-10-20',
+    data_acesso: 'Nov/2026',
     descricao: 'Indicadores compostos de vulnerabilidade em infraestrutura urbana, capital humano e renda/trabalho.'
   },
   {
@@ -65,7 +65,7 @@ export const mockFontes: Fonte[] = [
     instituicao: 'EPE',
     titulo: 'Anuário Estatístico de Energia Elétrica (Dados Abertos)',
     url: 'https://www.epe.gov.br/pt/publicacoes-dados-abertos/dados-abertos/dados-do-anuario-estatistico-de-energia-eletrica',
-    data_acesso: '2024-10-25',
+    data_acesso: 'Nov/2026',
     descricao: 'Consumo residencial de eletricidade, número de unidades consumidoras e evolução do mercado (escala Bahia).'
   }
 ];
@@ -321,21 +321,21 @@ export const mockAnalyses: Analise[] = [
     titulo: 'Disparidade Estrutural no Miolo de Salvador',
     descricao: 'Beiru/Tancredo Neves e Pernambués apresentam taxas de domicílios de baixa renda (48,7% e 42,1%) significativamente superiores à média de Salvador (29,5%), gerando maior vulnerabilidade frente ao custo da tarifa de energia.',
     categoria: 'Econômica',
-    data_criacao: '2024-11-12'
+    data_criacao: '2026-11-12'
   },
   {
     id: 2,
     titulo: 'Vulnerabilidade Habitacional e Risco de Instalações Precárias',
     descricao: 'A elevada taxa de esgotamento inadequado (28,4% no Beiru) correlaciona-se espacialmente com habitações de autoconstrução não planejadas, onde as instalações elétricas internas apresentam elevado risco de sobrecarga e incêndios.',
     categoria: 'Habitacional / Infraestrutura',
-    data_criacao: '2024-11-14'
+    data_criacao: '2026-11-14'
   },
   {
     id: 3,
     titulo: 'A Restrição Metodológica dos Dados da EPE',
     descricao: 'Os dados do Anuário da EPE mostram expansão contínua do consumo residencial médio baiano (512,8 kWh/hab em 2022). No entanto, este indicador estadual oculta o fardo financeiro desproporcional suportado por famílias periféricas em Salvador.',
     categoria: 'Energética',
-    data_criacao: '2024-11-16'
+    data_criacao: '2026-11-16'
   }
 ];
 

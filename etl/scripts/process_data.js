@@ -28,9 +28,9 @@ const territories = [
 
 // 2. Fontes
 const fontes = [
-  { id: 1, instituicao: 'IBGE', titulo: 'Censo Demográfico 2022', url: 'https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/', data_acesso: '2024-10-15' },
-  { id: 2, instituicao: 'IPEA', titulo: 'Atlas da Vulnerabilidade Social', url: 'http://ivs.ipea.gov.br/', data_acesso: '2024-10-20' },
-  { id: 3, instituicao: 'EPE', titulo: 'Anuário Estatístico de Energia Elétrica', url: 'https://www.epe.gov.br/', data_acesso: '2024-10-25' }
+  { id: 1, instituicao: 'IBGE', titulo: 'Censo Demográfico 2022', url: 'https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/', data_acesso: 'Nov/2026' },
+  { id: 2, instituicao: 'IPEA', titulo: 'Atlas da Vulnerabilidade Social', url: 'http://ivs.ipea.gov.br/', data_acesso: 'Nov/2026' },
+  { id: 3, instituicao: 'EPE', titulo: 'Anuário Estatístico de Energia Elétrica', url: 'https://www.epe.gov.br/', data_acesso: 'Nov/2026' }
 ];
 
 // 3. Indicadores

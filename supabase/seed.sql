@@ -12,9 +12,9 @@ ON CONFLICT (id) DO UPDATE SET nome = EXCLUDED.nome;
 
 -- 2. Inserir Fontes
 INSERT INTO fontes (id, instituicao, titulo, url, data_acesso, descricao) VALUES
-(1, 'IBGE', 'Censo Demográfico 2022 - Agregados por Setores e Bairros', 'https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/', '2024-10-15', 'Dados de população, renda, saneamento e entorno urbano.'),
-(2, 'IPEA', 'Atlas da Vulnerabilidade Social (IVS)', 'http://ivs.ipea.gov.br/', '2024-10-20', 'Indicadores de vulnerabilidade social na escala publicada.'),
-(3, 'EPE', 'Anuário Estatístico de Energia Elétrica', 'https://www.epe.gov.br/pt/publicacoes-dados-abertos/', '2024-10-25', 'Consumo residencial e consumidores do mercado da Bahia.')
+(1, 'IBGE', 'Censo Demográfico 2022 - Agregados por Setores e Bairros', 'https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/', '2026-11-12', 'Dados de população, renda, saneamento e entorno urbano.'),
+(2, 'IPEA', 'Atlas da Vulnerabilidade Social (IVS)', 'http://ivs.ipea.gov.br/', '2026-11-14', 'Indicadores de vulnerabilidade social na escala publicada.'),
+(3, 'EPE', 'Anuário Estatístico de Energia Elétrica', 'https://www.epe.gov.br/pt/publicacoes-dados-abertos/', '2026-11-15', 'Consumo residencial e consumidores do mercado da Bahia.')
 ON CONFLICT (id) DO UPDATE SET titulo = EXCLUDED.titulo;
 
 -- 3. Inserir Indicadores

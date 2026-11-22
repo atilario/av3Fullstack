@@ -146,9 +146,9 @@ def main():
         w.writerows(territories)
 
     fontes = [
-        {'id': 1, 'instituicao': 'IBGE', 'titulo': 'Censo Demográfico 2022 - Agregados por Setores e Bairros', 'url': 'https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/', 'data_acesso': '2024-10-15'},
-        {'id': 2, 'instituicao': 'IPEA', 'titulo': 'Atlas da Vulnerabilidade Social (IVS)', 'url': 'http://ivs.ipea.gov.br/', 'data_acesso': '2024-10-20'},
-        {'id': 3, 'instituicao': 'EPE', 'titulo': 'Anuário Estatístico de Energia Elétrica', 'url': 'https://www.epe.gov.br/pt/publicacoes-dados-abertos/', 'data_acesso': '2024-10-25'}
+        {'id': 1, 'instituicao': 'IBGE', 'titulo': 'Censo Demográfico 2022 - Agregados por Setores e Bairros', 'url': 'https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/', 'data_acesso': 'Nov/2026'},
+        {'id': 2, 'instituicao': 'IPEA', 'titulo': 'Atlas da Vulnerabilidade Social (IVS)', 'url': 'http://ivs.ipea.gov.br/', 'data_acesso': 'Nov/2026'},
+        {'id': 3, 'instituicao': 'EPE', 'titulo': 'Anuário Estatístico de Energia Elétrica', 'url': 'https://www.epe.gov.br/pt/publicacoes-dados-abertos/', 'data_acesso': 'Nov/2026'}
     ]
     with open(os.path.join(PROCESSED_DIR, 'fontes.csv'), 'w', newline='', encoding='utf-8') as f:
         w = csv.DictWriter(f, fieldnames=fontes[0].keys())
