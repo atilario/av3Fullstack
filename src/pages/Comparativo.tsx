@@ -159,7 +159,7 @@ export const Comparativo: React.FC = () => {
                   fontSize: '12px'
                 }}
                 formatter={(value: any) => [`${value}%`, 'Taxa']}
-                cursor={{ fill: 'rgba(51, 65, 85, 0.3)' }}
+                cursor={{ fill: 'rgba(51, 65, 85, 0.25)' }}
               />
               <Bar dataKey="Beiru" name="Beiru/Tancredo Neves" fill="#10b981" radius={[4, 4, 0, 0]} />
               <Bar dataKey="Pernambues" name="Pernambués" fill="#3b82f6" radius={[4, 4, 0, 0]} />
