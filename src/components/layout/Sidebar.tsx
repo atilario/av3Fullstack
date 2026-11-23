@@ -7,7 +7,8 @@ import {
   BookOpen, 
   FileText,
   Layers,
-  GraduationCap
+  GraduationCap,
+  Users
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -99,16 +100,41 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => 
           </nav>
         </div>
 
-        {/* Academic context card */}
-        <div className="rounded-lg border border-slate-800 bg-slate-950/60 p-3 text-xs text-slate-400 space-y-1">
+        {/* Academic context and Team card */}
+        <div className="rounded-lg border border-slate-800 bg-slate-950/60 p-3 text-xs text-slate-400 space-y-2">
           <div className="flex items-center gap-1.5 font-semibold text-slate-300">
             <GraduationCap className="h-4 w-4 text-emerald-400" />
             <span>SENAI CIMATEC</span>
           </div>
-          <p className="text-[11px] text-slate-400 leading-relaxed">
+          <p className="text-[11px] text-slate-400 leading-tight">
             Engenharia de Computação<br />
             Full Stack &bull; Prof. Celso Barreto
           </p>
+
+          <div className="pt-2 border-t border-slate-800/80 space-y-1.5">
+            <div className="flex items-center gap-1 text-[11px] font-semibold text-slate-300">
+              <Users className="h-3.5 w-3.5 text-emerald-400" />
+              <span>Equipe de Desenvolvimento:</span>
+            </div>
+            <div className="space-y-1 text-[11px]">
+              <div className="flex justify-between items-center">
+                <span className="text-slate-300 font-medium">Átila Leite</span>
+                <span className="text-[10px] text-slate-400">DevOps / BD</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-slate-300 font-medium">Heitor Barreto</span>
+                <span className="text-[10px] text-slate-400">Dados / ETL</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-slate-300 font-medium">Maria Fernanda</span>
+                <span className="text-[10px] text-slate-400">Frontend</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-slate-300 font-medium">Camila Rocha</span>
+                <span className="text-[10px] text-slate-400">GIS / Análise</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

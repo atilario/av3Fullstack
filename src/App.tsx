@@ -77,10 +77,25 @@ export function App() {
           </button>
         </div>
 
-        <main className="flex-1 overflow-y-auto p-4 md:p-8 pb-20 md:pb-8">
-          <div className="max-w-7xl mx-auto">
+        <main className="flex-1 overflow-y-auto p-4 md:p-8 pb-20 md:pb-8 flex flex-col justify-between">
+          <div className="max-w-7xl mx-auto w-full">
             {renderActiveScreen()}
           </div>
+
+          <footer className="mt-12 pt-6 border-t border-slate-800/80 text-center text-xs text-slate-400 space-y-2">
+            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-slate-400 text-xs">
+              <span className="font-semibold text-slate-300">SENAI CIMATEC</span>
+              <span>&bull;</span>
+              <span>Engenharia de Computação</span>
+              <span>&bull;</span>
+              <span>Disciplina: Full Stack (AV3)</span>
+              <span>&bull;</span>
+              <span>Prof. Celso Barreto</span>
+            </div>
+            <div className="text-[11px] text-slate-400">
+              Equipe de Desenvolvimento: <strong className="text-slate-300">Átila Leite</strong> &bull; <strong className="text-slate-300">Camila Rocha</strong> &bull; <strong className="text-slate-300">Heitor Barreto</strong> &bull; <strong className="text-slate-300">Maria Fernanda Ribeiro</strong>
+            </div>
+          </footer>
         </main>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, Search, Filter, AlertCircle, FileCheck, Layers, Link as LinkIcon } from 'lucide-react';
+import { BookOpen, Search, Filter, AlertCircle, FileCheck, Layers, Link as LinkIcon, Users, GraduationCap } from 'lucide-react';
 import { mockIndicadores, mockFontes } from '../services/mockData';
 import { Card } from '../components/ui/Card';
 
@@ -189,6 +189,64 @@ export const Metodologia: React.FC = () => {
                   <span className="text-emerald-400">{ind.unidade}</span>
                 </div>
               </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Seção da Equipe de Desenvolvimento */}
+      <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-5 space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
+          <div>
+            <h3 className="text-sm font-semibold text-slate-100 flex items-center gap-2">
+              <Users className="h-4 w-4 text-emerald-400" />
+              Equipe do Projeto &bull; Divisão de Responsabilidades
+            </h3>
+            <p className="text-xs text-slate-400 mt-0.5">
+              Engenharia de Computação &bull; SENAI CIMATEC &bull; Disciplina Full Stack (Prof. Celso Barreto)
+            </p>
+          </div>
+          <span className="text-xs px-2.5 py-1 rounded-full bg-slate-800 border border-slate-700 text-slate-300 w-fit">
+            Avaliação AV3 Parcial
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {[
+            {
+              nome: 'Átila Leite',
+              usuario: 'atilario',
+              funcao: 'Arquiteto de Banco e DevOps',
+              atribuicoes: 'Modelagem relacional PostgreSQL no Supabase, políticas RLS, conexão do client frontend e deploy contínuo na Vercel.'
+            },
+            {
+              nome: 'Heitor Barreto',
+              usuario: 'Heitorab06',
+              funcao: 'Engenheiro de Dados e ETL',
+              atribuicoes: 'Coleta e tratamento das bases brutas (IBGE, IPEA, EPE), scripts de ingestão e relatório de qualidade dos dados.'
+            },
+            {
+              nome: 'Maria Fernanda Ribeiro',
+              usuario: 'nandaribeiroo',
+              funcao: 'Desenvolvedora Frontend Core',
+              atribuicoes: 'Estruturação de componentes React, Tela 1 (Visão Geral), Tela 2 (Comparativo Territorial) e Tela 4 (Análise Energética).'
+            },
+            {
+              nome: 'Camila Rocha',
+              usuario: 'milarocha30',
+              funcao: 'Especialista em GIS e Análise Crítica',
+              atribuicoes: 'Tela 3 (Mapa Leaflet/GeoJSON), Tela 5 (Metodologia), resposta das 8 questões analíticas e modelagem do IEVS.'
+            }
+          ].map(membro => (
+            <div key={membro.usuario} className="p-3.5 rounded-lg border border-slate-800 bg-slate-950/60 space-y-1.5">
+              <div className="flex items-center justify-between">
+                <span className="font-semibold text-sm text-white">{membro.nome}</span>
+                <span className="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
+                  @{membro.usuario}
+                </span>
+              </div>
+              <div className="text-xs font-medium text-slate-300">{membro.funcao}</div>
+              <p className="text-[11px] text-slate-400 leading-relaxed">{membro.atribuicoes}</p>
             </div>
           ))}
         </div>
